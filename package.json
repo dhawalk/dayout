@@ -1,0 +1,39 @@
+{
+  "name": "InMenu-Node",
+  "version": "0.0.0",
+  "description": "Node server to serve html pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "start": "npm run build & nodemon index.js"
+  },
+  "author": "Dhawal",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "watchify": "^2.4.0"
+  },
+  "dependencies": {
+    "express": "^4.12.2",
+    "gulp-less": "^3.0.2",
+    "gulp-task-loader": "^1.0.8",
+    "install": "^0.1.8",
+    "jade": "^1.9.2",
+    "node-jsx": "^0.12.4",
+    "npm": "^2.7.4",
+    "react": "^0.12.2",
+    "react-tabbar": "0.0.11",
+    "react-tap-event-plugin": "^0.1.6",
+    "reactify": "^1.0.0",
+    "require-dir": "^0.1.0",
+    "uglify": "^0.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
